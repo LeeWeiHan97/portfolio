@@ -129,12 +129,26 @@ class App extends React.Component {
             <p>Education</p>
           </div>
 
-          <div>
-            <div class="image-container"><a href="https://www.nextacademy.com/" target="_blank"><img src={next_logo} id="next-logo"></img></a></div>
-            <p class="education-heading-1">NEXT Academy</p>
-            <p class="education-heading-2">Full-Stack Web Developer Course</p>
-          </div>
+          <div class="education-container">
+            <div>
+              <div class="image-container"><a href="https://www.nextacademy.com/" target="_blank"><img src={next_logo} id="next-logo"></img></a></div>
+              <p class="education-heading-1">NEXT Academy</p>
+              <p class="education-heading-2">Full-Stack Web Developer Course</p>
+            </div>
 
+            <div class="frontend-container">
+              <p class="frontend-heading-1">Front-End</p>
+              <p class="frontend-heading-2">Languages</p>
+              <p class="frontend-description">HTML5, CSS3, Javascript</p>
+              <p class="frontend-heading-2">Library</p>
+              <p class="frontend-description">React.js, Bootstrap</p>
+            </div>
+
+            <div class="backend-container">
+              <p>Back-End</p>
+            </div>
+
+          </div>
         </div>
 
       </div>
