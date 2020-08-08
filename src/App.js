@@ -5,6 +5,7 @@ import {Route, Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import resume_file from './Lee Wei Han-CV.pdf';
+import linkedIn from './linkedin social media icon_3609691.png';
 
 /* const NavBar = styled.div`
   color: white;
@@ -93,8 +94,34 @@ class App extends React.Component {
           </div>
         </div>
 
-        <div>
-          <p>About Me</p>
+        <div class="about-me-parent-container">
+
+          <div class="about-me-heading">
+            <p>About Me</p>
+          </div>
+
+          <div class="about-me-container">
+            <div class="bio-container">
+              <p class="bio-heading">Introduction</p>
+              <div class="bio-description-container">
+                <p class="bio-description">My full name is Lee Wei Han and I am currently 23 years of age. My hobbies include sports such as frisbee and badminton. I also enjoy computer gaming on the side.</p>
+              </div>
+            </div>
+
+            <div class="contact-container">
+              <p class="bio-heading">Contact Me</p>
+              <div class="mobile-container">
+                <p class="mobile-heading">Mobile no.</p>
+                <p class="mobile-description">+60166039919</p>
+              </div>
+              <div class="email container">
+                <p class="mobile-heading">Email</p>
+                <p class="mobile-description">weihanlee88@gmail.com</p>
+              </div>
+              <p class="mobile-heading">LinkedIn</p>
+              <div class="image-container"><a href="https://www.linkedin.com/in/wei-han-lee-9b1a7b161/" target="_blank"><img src={linkedIn} class="logo"></img></a></div>         
+            </div>
+          </div>
         </div>
 
       </div>
