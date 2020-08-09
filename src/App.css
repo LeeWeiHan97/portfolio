@@ -1,3 +1,11 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
 .parent-container-profile {
   position: relative;
   height: 56vh;
@@ -173,7 +181,14 @@
 .education-heading-2 {
   text-align: center;
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.education-heading-3 {
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+  margin-top: 2vh;
 }
 
 #next-logo {
@@ -182,37 +197,89 @@
   border-radius: 50%;
 }
 
-.education-container {
-  margin-left: 15vw;
-  margin-right: 15vw;
-  padding-top: 4vw;
-  background-color: #f5ded0;
+.education-container-1 {
+  position: relative;
+  margin-left: 3vw;
+  width: 38.5vw;
+  height: 38.5vw;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: #c9c9c9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.frontend-container {
-  text-align: center;
-  margin-top: 5vh;
-  width: 40vw;
+.education-container-2 {
+  position: absolute;
+  z-index: -1;
+  width: 69vw;
+  padding-top: 1vh;
+  padding-bottom: 4vh;
+  background-color: #e0e0e0;
+  border: 3px solid black;
+  margin-bottom: 15px;
+  left: 20vw;
+  top: 10vw;
 }
 
 .frontend-heading-1 {
-  font-size: 22px;
+  padding-left: 23vw;
+  font-size: 27px;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 2.5vh;
+  margin-bottom: 1vh;
+  margin-top: 4vh;
 }
 
 .frontend-heading-2 {
-  font-size: 18px;
+  padding-left: 23vw;
+  font-size: 20px;
   margin-bottom: 0.5vh;
+  margin-left: 3vw;
 }
 
 .frontend-description {
-  font-size: 15px;
+  padding-left: 23vw;
+  font-size: 16px;
+  margin-left: 5vw;
+}
+
+.projects-container {
+  border-top: 3px solid black;
+  text-align: center;
+  margin-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.projects-heading-1 {
+  font-size: 27px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1vh;
+  margin-top: 3vh;
+}
+
+.projects-heading-2 {
+  font-size: 20px;
+  margin-bottom: 0.5vh;
+}
+
+.projects-description {
+  font-size: 14px;
+}
+
+.projects-heading-link {
+  display: flex;
+  justify-content: center;
+}
+
+#github-logo {
+  height: 3.5vw;
+  width: 3.5vw;
+  margin-left: 1vw;
 }
 
 @media only screen and (min-width: 900px) {

@@ -7,6 +7,7 @@ import {Navbar, Nav, Container} from 'react-bootstrap';
 import resume_file from './Lee Wei Han-CV.pdf';
 import linkedIn from './linkedin social media icon_3609691.png';
 import next_logo from './next-academy-logo.png';
+import github_logo from './GitHub-Mark.png';
 
 /* const NavBar = styled.div`
   color: white;
@@ -104,7 +105,7 @@ class App extends React.Component {
             <div class="bio-container">
               <p class="bio-heading">Introduction</p>
               <div class="bio-description-container">
-                <p class="bio-description">My full name is Lee Wei Han and I am currently 23 years of age. My hobbies include sports such as frisbee and badminton. I also enjoy computer gaming on the side.</p>
+                <p class="bio-description">My full name is Lee Wei Han and I am currently 23 years old. My hobbies include sports such as frisbee and badminton. I also enjoy computer gaming on the side.</p>
               </div>
             </div>
 
@@ -129,28 +130,48 @@ class App extends React.Component {
             <p>Education</p>
           </div>
 
-          <div class="education-container">
+          <div class="education-container-1">
             <div>
               <div class="image-container"><a href="https://www.nextacademy.com/" target="_blank"><img src={next_logo} id="next-logo"></img></a></div>
-              <p class="education-heading-1">NEXT Academy</p>
+              <a href="https://www.nextacademy.com/" target="_blank"><p class="education-heading-1">NEXT Academy</p></a>
               <p class="education-heading-2">Full-Stack Web Developer Course</p>
+              <p class="education-heading-3">Jul 2019 - Sept 2019</p>
             </div>
 
-            <div class="frontend-container">
+            <div class="education-container-2">
               <p class="frontend-heading-1">Front-End</p>
               <p class="frontend-heading-2">Languages</p>
               <p class="frontend-description">HTML5, CSS3, Javascript</p>
               <p class="frontend-heading-2">Library</p>
               <p class="frontend-description">React.js, Bootstrap</p>
-            </div>
 
-            <div class="backend-container">
-              <p>Back-End</p>
-            </div>
+              <p class="frontend-heading-1">Back-End</p>
+              <p class="frontend-heading-2">Language</p>
+              <p class="frontend-description">Python</p>
+              <p class="frontend-heading-2">Frameworks</p>
+              <p class="frontend-description">Flask, Jinja</p>
+              <p class="frontend-heading-2">Databases</p>
+              <p class="frontend-description">SQLite, PostgreSQL</p>
 
+              <p class="frontend-heading-1">Extras</p>
+              <p class="frontend-heading-2">Language</p>
+              <p class="frontend-description">Flutter (for mobile app development)</p>
+              <p class="frontend-heading-2">Cloud Services</p>
+              <p class="frontend-description">Amazon Web Services, Heroku, Netlify, Google Firebase</p>
+            
+              <div class="projects-container">
+                <p class="projects-heading-1">Projects</p>
+                <div class="projects-heading-link">
+                  <p class="projects-heading-2">Nextagram</p>
+                  <img src={github_logo} id="github-logo"></img>
+                </div>
+                <p class="projects-description">A social media webapp that references features from Instagram such as logging in and posting pictures, while adding other features such as the ability to donate to users.</p>
+                <p class="projects-heading-2">Live chat app</p>
+                <p class="projects-heading-2">Household-todo (Mobile app)</p>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     )
   }
