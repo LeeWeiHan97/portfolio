@@ -6,6 +6,10 @@ a:hover {
   text-decoration: none !important;
 }
 
+ul {
+  list-style-type: square;
+}
+
 .parent-container-profile {
   position: relative;
   height: 56vh;
@@ -250,8 +254,8 @@ a:hover {
   border-top: 3px solid black;
   text-align: center;
   margin-top: 4vh;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 4.5vw;
+  padding-right: 4.5vw;
 }
 
 .projects-heading-1 {
@@ -263,8 +267,9 @@ a:hover {
 }
 
 .projects-heading-2 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 0.5vh;
+  margin-top: 1vh;
 }
 
 .projects-description {
@@ -280,6 +285,63 @@ a:hover {
   height: 3.5vw;
   width: 3.5vw;
   margin-left: 1vw;
+  margin-top: 1vh;
+}
+
+.education-container-3 {
+  position: absolute;
+  left: calc(-6px - 20vw);
+  top: 105%;
+  width: 38.5vw;
+  height: 38.5vw;
+  border-radius: 50%;
+  border: 3px solid #6e21ad;
+  background-color: #cbace3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#uom-logo {
+  height: 11vh;
+  margin-bottom: 1vh;
+}
+
+.education-container-4 {
+  position: absolute;
+  z-index: -1;
+  width: 69vw;
+  padding-top: 1vh;
+  padding-bottom: 4vh;
+  background-color: #cbace3;
+  border: 3px solid #6e21ad;
+  margin-bottom: 15px;
+  left: 20vw;
+  top: 10vw;
+}
+
+.uom-heading-1 {
+  padding-left: 23vw;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1vh;
+  margin-top: 4vh;
+}
+
+.uom-heading-2 {
+  padding-left: 23vw;
+  font-size: 18px;
+  margin-bottom: 0.5vh;
+  margin-top: 2.5vh;
+}
+
+.uom-description {
+  margin-left: 23vw;
+  padding-left: 2vw;
+  font-size: 16.5px;
+  margin-top: 0.8vh;
 }
 
 @media only screen and (min-width: 900px) {

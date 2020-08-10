@@ -8,6 +8,8 @@ import resume_file from './Lee Wei Han-CV.pdf';
 import linkedIn from './linkedin social media icon_3609691.png';
 import next_logo from './next-academy-logo.png';
 import github_logo from './GitHub-Mark.png';
+import netlify_logo from './netlify-logo.png';
+import uom_logo from './uom-logo.png';
 
 /* const NavBar = styled.div`
   color: white;
@@ -163,12 +165,46 @@ class App extends React.Component {
                 <p class="projects-heading-1">Projects</p>
                 <div class="projects-heading-link">
                   <p class="projects-heading-2">Nextagram</p>
-                  <img src={github_logo} id="github-logo"></img>
+                  <a href="https://nextagram-learn.netlify.app" target="_blank"><img src={netlify_logo} id="github-logo"></img></a>
                 </div>
                 <p class="projects-description">A social media webapp that references features from Instagram such as logging in and posting pictures, while adding other features such as the ability to donate to users.</p>
-                <p class="projects-heading-2">Live chat app</p>
-                <p class="projects-heading-2">Household-todo (Mobile app)</p>
+                <div class="projects-heading-link">
+                  <p class="projects-heading-2">Live chat app</p>
+                  <a href="https://next-live-app.netlify.app" target="_blank"><img src={netlify_logo} id="github-logo"></img></a>
+                </div>
+                <p class="projects-description">A WebSocket chatting app that displays users with randomly generated names who are currently online in the app.</p>
+                <div class="projects-heading-link">
+                  <p class="projects-heading-2">Household-todo (Mobile app)</p>
+                  <a href="https://github.com/LeeWeiHan97?tab=repositories" target="_blank"><img src={github_logo} id="github-logo"></img></a>
+                </div>
+                <p class="projects-description">A mobile app for users in a household to record their schedules as well as assign tasks to individuals. Extra features include alerting users of task datelines via notifications and geolocation pinpointing for nearby grocers.</p>
               </div>
+
+              <div class="education-container-3">
+                <div class="image-container"><a href="https://www.manchester.ac.uk/" target="_blank"><img src={uom_logo} id="uom-logo"></img></a></div>
+                <p class="education-heading-2">Chemical Engineering and Analytical Sciences</p>
+                <p class="education-heading-3">Sept 2016 - Jul 2020</p>
+              
+                <div class="education-container-4">
+                  <p class="uom-heading-1">Masters in Chemical Engineering and Analytical Sciences (Hons)</p>
+                  <p class="uom-heading-2">Second Class Upper | 2:1</p>
+                  <p class="uom-heading-1">Course Modules</p>
+                  <ul>
+                    <li class="uom-description">Transport Phenomena</li>
+                    <li class="uom-description">Thermodynamics</li>
+                    <li class="uom-description">Chemical Reaction Engineering</li>
+                    <li class="uom-description">Solid-Fluid Systems</li>
+                    <li class="uom-description">Distillation & Adsorption</li>
+                    <li class="uom-description">Momentum, Heat and Mass Transfer</li>
+                    <li class="uom-description">Safety & Reliability Engineering</li>
+                    <li class="uom-description">Process Synthesis</li>
+                    <li class="uom-description">Process Control</li>
+                    <li class="uom-description">Process Fluid Dynamics</li>
+                  </ul>
+                </div>
+
+              </div>
+
             </div>
           </div>
         </div>
