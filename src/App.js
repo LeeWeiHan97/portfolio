@@ -77,9 +77,9 @@ class App extends React.Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <div class="nav-right-bar">
-              <Nav.Link href="#home" className="nav-right">About Me</Nav.Link>
-              <Nav.Link href="#link" className="nav-right">Education</Nav.Link>
-              <Nav.Link href="#link" className="nav-right">Achievements</Nav.Link>
+              <Nav.Link href="#aboutme_link" className="nav-right">About Me</Nav.Link>
+              <Nav.Link href="#education_link" className="nav-right">Education</Nav.Link>
+              <Nav.Link href="#extracurricular_link" className="nav-right">Extracurricular</Nav.Link>
               <Nav.Link href="#link" className="nav-right">Working Experience</Nav.Link>
               <Nav.Link href="#link" className="nav-right">Projects</Nav.Link>
             </div>
@@ -99,20 +99,22 @@ class App extends React.Component {
         </div>
 
         <div class="about-me-parent-container">
-          <div class="profile-heading">
-            <p>About Me</p>
-          </div>
+          <a id="aboutme_link">
+            <div class="heading-1">
+              <p>About Me</p>
+            </div>
+          </a>
 
           <div class="about-me-container">
             <div class="bio-container">
-              <p class="bio-heading">Introduction</p>
+              <p class="heading-2">Introduction</p>
               <div class="bio-description-container">
                 <p class="bio-description">My full name is Lee Wei Han and I am currently 23 years old. My hobbies include sports such as frisbee and badminton. I also enjoy computer gaming on the side.</p>
               </div>
             </div>
 
             <div class="contact-container">
-              <p class="bio-heading">Contact Me</p>
+              <p class="heading-2">Contact Me</p>
               <div class="mobile-container">
                 <p class="mobile-heading">Mobile no.</p>
                 <p class="mobile-description">+60166039919</p>
@@ -128,19 +130,20 @@ class App extends React.Component {
         </div>
 
         <div class="education-parent-container">
-          <div class="profile-heading">
-            <p>Education</p>
-          </div>
+          <a id="education_link">
+            <div class="heading-1">
+              <p>Education</p>
+            </div>
+          </a>
 
           <div class="education-container-1">
-            <div>
-              <div class="image-container"><a href="https://www.nextacademy.com/" target="_blank"><img src={next_logo} id="next-logo"></img></a></div>
-              <a href="https://www.nextacademy.com/" target="_blank"><p class="education-heading-1">NEXT Academy</p></a>
-              <p class="education-heading-2">Full-Stack Web Developer Course</p>
-              <p class="education-heading-3">Jul 2019 - Sept 2019</p>
-            </div>
+            <div class="image-container"><a href="https://www.nextacademy.com/" target="_blank"><img src={next_logo} id="next-logo"></img></a></div>
+            <a href="https://www.nextacademy.com/" target="_blank"><p class="education-heading-1">NEXT Academy</p></a>
+            <p class="education-heading-2">Full-Stack Web Developer Course</p>
+            <p class="education-heading-3">Jul 2019 - Sept 2019</p>
+          </div>
 
-            <div class="education-container-2">
+          <div class="education-container-2">
               <p class="frontend-heading-1">Front-End</p>
               <p class="frontend-heading-2">Languages</p>
               <p class="frontend-description">HTML5, CSS3, Javascript</p>
@@ -179,35 +182,56 @@ class App extends React.Component {
                 </div>
                 <p class="projects-description">A mobile app for users in a household to record their schedules as well as assign tasks to individuals. Extra features include alerting users of task datelines via notifications and geolocation pinpointing for nearby grocers.</p>
               </div>
+          </div>
 
-              <div class="education-container-3">
-                <div class="image-container"><a href="https://www.manchester.ac.uk/" target="_blank"><img src={uom_logo} id="uom-logo"></img></a></div>
-                <p class="education-heading-2">Chemical Engineering and Analytical Sciences</p>
-                <p class="education-heading-3">Sept 2016 - Jul 2020</p>
-              
-                <div class="education-container-4">
-                  <p class="uom-heading-1">Masters in Chemical Engineering and Analytical Sciences (Hons)</p>
-                  <p class="uom-heading-2">Second Class Upper | 2:1</p>
-                  <p class="uom-heading-1">Course Modules</p>
-                  <ul>
-                    <li class="uom-description">Transport Phenomena</li>
-                    <li class="uom-description">Thermodynamics</li>
-                    <li class="uom-description">Chemical Reaction Engineering</li>
-                    <li class="uom-description">Solid-Fluid Systems</li>
-                    <li class="uom-description">Distillation & Adsorption</li>
-                    <li class="uom-description">Momentum, Heat and Mass Transfer</li>
-                    <li class="uom-description">Safety & Reliability Engineering</li>
-                    <li class="uom-description">Process Synthesis</li>
-                    <li class="uom-description">Process Control</li>
-                    <li class="uom-description">Process Fluid Dynamics</li>
-                  </ul>
-                </div>
+          <div class="education-container-3">
+            <div class="image-container"><a href="https://www.manchester.ac.uk/" target="_blank"><img src={uom_logo} id="uom-logo"></img></a></div>
+            <p class="education-heading-2">Chemical Engineering and Analytical Sciences</p>
+            <p class="education-heading-3">Sept 2016 - Jul 2020</p>
+          </div>
 
-              </div>
-
-            </div>
+          <div class="education-container-4">
+            <p class="uom-heading-1">Masters in Chemical Engineering and Analytical Sciences (Hons)</p>
+            <p class="uom-heading-2">Second Class Upper | 2:1</p>
+            <p class="uom-heading-1">Course Modules</p>
+            <ul>
+              <li class="uom-description">Transport Phenomena</li>
+              <li class="uom-description">Thermodynamics</li>
+              <li class="uom-description">Chemical Reaction Engineering</li>
+              <li class="uom-description">Solid-Fluid Systems</li>
+              <li class="uom-description">Distillation & Adsorption</li>
+              <li class="uom-description">Momentum, Heat and Mass Transfer</li>
+              <li class="uom-description">Safety & Reliability Engineering</li>
+              <li class="uom-description">Process Synthesis</li>
+              <li class="uom-description">Process Control</li>
+              <li class="uom-description">Process Fluid Dynamics</li>
+            </ul>
           </div>
         </div>
+
+        <div class="extracurricular-parent-container">
+          <a id="extracurricular_link">
+            <div class="heading-1">
+              <p>Extracurricular</p>
+            </div>
+          </a>
+        
+          <div class="extracurricular-container">
+            <div class="extracurricular-subcontainer">
+              <p class="heading-2">MSSM Frisbee Club</p>
+              <p class="heading-3">Top 5 Committee</p>
+              <p class="heading-4">2017 - 2018</p>
+              <ul class="extracurricular-list">
+                <li>Plan and coordinate regular weekly training sessions for a club of approximately 30 people.</li>
+                <li>Responsible for the coaching and training of new members.</li>
+              </ul>
+            </div>
+          </div>
+        
+        </div>
+
+        
+
       </div>
     )
   }
