@@ -373,16 +373,18 @@ ul {
   background-color: rgb(116, 221, 133);
   padding-top: 2vh;
   padding-bottom: 2vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3vh;
 }
 
 .extracurricular-list {
   margin-top: 4vh;
+  padding-right: 2vw;
 }
 
 .heading-3 {
@@ -393,7 +395,29 @@ ul {
 
 .heading-4 {
   text-align: center;
-  font-size: 18px;
+  margin-top: 3vw;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1vh;
+}
+
+.heading-5 {
+  text-align: center;
+  font-size: 21.5px;
+  font-weight: bold;
+  margin-bottom: 0.5vh;
+}
+
+.heading-6 {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.extracurricular-description {
+  margin-bottom: 1vh;
+  font-size: 0.9em;
 }
 
 @media only screen and (min-width: 900px) {

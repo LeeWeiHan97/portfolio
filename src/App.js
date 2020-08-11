@@ -218,14 +218,86 @@ class App extends React.Component {
         
           <div class="extracurricular-container">
             <div class="extracurricular-subcontainer">
-              <p class="heading-2">MSSM Frisbee Club</p>
-              <p class="heading-3">Top 5 Committee</p>
-              <p class="heading-4">2017 - 2018</p>
+              <p class="heading-4">MSSM Frisbee Club</p>
+              <p class="heading-5">Top 5 Committee</p>
+              <p class="heading-6">2017 - 2018</p>
               <ul class="extracurricular-list">
-                <li>Plan and coordinate regular weekly training sessions for a club of approximately 30 people.</li>
-                <li>Responsible for the coaching and training of new members.</li>
+                <li class="extracurricular-description">Plan and coordinate regular weekly training sessions for a club of approximately 30 people.</li>
+                <li class="extracurricular-description">Responsible for the coaching and training of new members.</li>
               </ul>
             </div>
+
+            <div class="extracurricular-subcontainer">
+              <p class="heading-4">Design Project Group</p>
+              <p class="heading-5">Group Leader</p>
+              <p class="heading-6">2019</p>
+              <ul class="extracurricular-list">
+                <li class="extracurricular-description">Responsible for the communication between groupmates and the group supervisor to ensure high workflow efficiency.</li>
+                <li class="extracurricular-description">Kept track of every official and unofficial meeting held to ensure the group work is able to be completed on time.</li>
+              </ul>
+            </div>
+
+            <div class="extracurricular-subcontainer">
+              <p class="heading-4">HAZOP Coursework Group</p>
+              <p class="heading-5">Chairman</p>
+              <p class="heading-6">2017</p>
+              <ul class="extracurricular-list">
+                <li class="extracurricular-description">Chaired and oversaw weekly meetings between a group of 7 members.</li>
+                <li class="extracurricular-description">Communicated well with members to ensure each member’s progress is up to date.</li>
+              </ul>
+            </div>
+
+            <div class="extracurricular-subcontainer">
+              <p class="heading-4">30 Hour Famine Camp</p>
+              <p class="heading-5">Volunteer</p>
+              <p class="heading-6">2015</p>
+              <ul class="extracurricular-list">
+                <li class="extracurricular-description">Volunteered for my secondary school in conducting activities held during the 2 days period.</li>
+                <li class="extracurricular-description">Head of station for various activities carried out, ensured smooth progression of the station game.</li>
+              </ul>
+            </div>
+
+            <div class="extracurricular-subcontainer">
+              <p class="heading-4">8 Hour Famine Camp</p>
+              <p class="heading-5">Volunteer</p>
+              <p class="heading-6">2015</p>
+              <ul class="extracurricular-list">
+                <li class="extracurricular-description">Volunteered for a primary school in taking care of students during the event.</li>
+                <li class="extracurricular-description">Learnt to be patient and manage a situation when it gets out of hand.</li>
+              </ul>
+            </div>
+
+            <div class="extracurricular-subcontainer">
+              <p class="heading-4">25th Johor International Jamboree</p>
+              <p class="heading-5">Participant</p>
+              <p class="heading-6">2013</p>
+              <ul class="extracurricular-list">
+                <li class="extracurricular-description">Took part in an international event where we interacted with various individuals from all around the country and world.</li>
+                <li class="extracurricular-description">Experienced and exposed myself to different cultures.</li>
+              </ul>
+            </div>
+
+            <div class="extracurricular-subcontainer">
+              <p class="heading-4">9th Petaling Scout's Group</p>
+              <p class="heading-5">Asistant Secretary</p>
+              <p class="heading-6">2013 - 2014</p>
+              <ul class="extracurricular-list">
+                <li class="extracurricular-description">Arranged and involved in meetings with teacher advisors and school board to plan activities.</li>
+                <li class="extracurricular-description">Trained juniors to be upcoming secretaries by implementing a scheduled training course.</li>
+                <li class="extracurricular-description">Obtained approval from the school board for various activities held by the Scout’s Group.</li>
+              </ul>
+            </div>
+
+            <div class="extracurricular-subcontainer">
+              <p class="heading-4">School Cooperative Club</p>
+              <p class="heading-5">Asistant Head of Stock</p>
+              <p class="heading-6">2013 - 2014</p>
+              <ul class="extracurricular-list">
+                <li class="extracurricular-description">Coordinated and carried out regular stock checks with club members.</li>
+                <li class="extracurricular-description">Maintained the tidiness of the store.</li>
+              </ul>
+            </div>
+
           </div>
         
         </div>
