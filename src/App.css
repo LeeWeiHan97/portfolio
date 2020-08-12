@@ -368,8 +368,9 @@ ul {
 }
 
 .extracurricular-subcontainer {
+  position: relative;
   width: 100%;
-  height: 45vh;
+  height: 30vh;
   background-color: rgb(116, 221, 133);
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -379,7 +380,24 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+}
+
+.fade-in-section {
+  width: 80%;
+  height: 30vh;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20vh);
+  transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
   margin-bottom: 3vh;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 .extracurricular-list {
@@ -418,6 +436,27 @@ ul {
 .extracurricular-description {
   margin-bottom: 1vh;
   font-size: 0.9em;
+}
+
+.fade-in {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  text-align: justify;
+  opacity: 0;
+  font-size: 1.1em;
+  transition: 1.2s;
+}
+
+.fade-in:hover {
+  opacity: 98%;
+  background-color: rgb(116, 221, 133);
+  transition: opacity 0.8s;
 }
 
 @media only screen and (min-width: 900px) {
