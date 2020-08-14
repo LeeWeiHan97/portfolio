@@ -388,8 +388,8 @@ ul {
   height: 30vh;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(20vh);
-  transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
+  transform: translateX(-10vw);
+  transition: opacity 800ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
   will-change: opacity, transform, visibility;
   margin-bottom: 3vh;
 }
@@ -438,6 +438,13 @@ ul {
   font-size: 0.9em;
 }
 
+.extracurricular-images {
+  position: absolute;
+  right: 3%;
+  bottom: 6%;
+  height: 40%;
+}
+
 .fade-in {
   position: absolute;
   display: flex;
@@ -450,13 +457,16 @@ ul {
   text-align: justify;
   opacity: 0;
   font-size: 1.1em;
-  transition: 1.2s;
+  transition: 0.8s;
 }
 
 .fade-in:hover {
-  opacity: 98%;
+  opacity: 96%;
   background-color: rgb(116, 221, 133);
-  transition: opacity 0.8s;
+}
+
+.working-experience-subcontainer-1 {
+  display: flex;
 }
 
 @media only screen and (min-width: 900px) {

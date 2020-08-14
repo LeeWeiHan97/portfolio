@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import './App.css';
-import {Route, Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import resume_file from './Lee Wei Han-CV.pdf';
@@ -10,6 +9,14 @@ import next_logo from './next-academy-logo.png';
 import github_logo from './GitHub-Mark.png';
 import netlify_logo from './netlify-logo.png';
 import uom_logo from './uom-logo.png';
+import frisbee_logo from './frisbee.png';
+import designproject_logo from './design-project.png';
+import hazop_logo from './hazop.png';
+import thirty_hour_famine_logo from './30-hour-famine.png';
+import eight_hour_famine_logo from './8-hour-famine.png';
+import jij_logo from './JIJ.png';
+import scouts_logo from './scouts.png';
+import chs_logo from './chs.png';
 
 const NavLinkTag = styled.div`
   text-decoration: none;
@@ -57,7 +64,7 @@ function FadeInSection(props) {
       entries.forEach(entry => setVisible(entry.isIntersecting));
     });
     observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -71,12 +78,6 @@ function FadeInSection(props) {
 } 
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-
-    }
-  }
 
   render() {
     return (
@@ -90,7 +91,7 @@ class App extends React.Component {
               <Nav.Link href="#aboutme_link" className="nav-right">About Me</Nav.Link>
               <Nav.Link href="#education_link" className="nav-right">Education</Nav.Link>
               <Nav.Link href="#extracurricular_link" className="nav-right">Extracurricular</Nav.Link>
-              <Nav.Link href="#link" className="nav-right">Working Experience</Nav.Link>
+              <Nav.Link href="#working_experience_link" className="nav-right">Working Experience</Nav.Link>
               <Nav.Link href="#link" className="nav-right">Projects</Nav.Link>
             </div>
           </Nav>
@@ -232,6 +233,7 @@ class App extends React.Component {
                 <p class="heading-4">MSSM Frisbee Club</p>
                 <p class="heading-5">Top 5 Committee</p>
                 <p class="heading-6">2017 - 2018</p>
+                <img class="extracurricular-images" src={frisbee_logo}></img>
 
                 <div class="fade-in">
                   <ul class="extracurricular-list">
@@ -247,6 +249,7 @@ class App extends React.Component {
                 <p class="heading-4">Design Project Group</p>
                 <p class="heading-5">Group Leader</p>
                 <p class="heading-6">2019</p>
+                <img class="extracurricular-images" src={designproject_logo}></img>
 
                 <div class="fade-in">
                   <ul class="extracurricular-list">
@@ -262,6 +265,7 @@ class App extends React.Component {
                 <p class="heading-4">HAZOP Coursework Group</p>
                 <p class="heading-5">Chairman</p>
                 <p class="heading-6">2017</p>
+                <img class="extracurricular-images" src={hazop_logo}></img>
 
                 <div class="fade-in">
                   <ul class="extracurricular-list">
@@ -278,6 +282,7 @@ class App extends React.Component {
                 <p class="heading-4">30 Hour Famine Camp</p>
                 <p class="heading-5">Volunteer</p>
                 <p class="heading-6">2015</p>
+                <img class="extracurricular-images" src={thirty_hour_famine_logo}></img>
 
                 <div class="fade-in">
                   <ul class="extracurricular-list">
@@ -293,6 +298,7 @@ class App extends React.Component {
                 <p class="heading-4">8 Hour Famine Camp</p>
                 <p class="heading-5">Volunteer</p>
                 <p class="heading-6">2015</p>
+                <img class="extracurricular-images" src={eight_hour_famine_logo}></img>
 
                 <div class="fade-in">
                   <ul class="extracurricular-list">
@@ -308,6 +314,7 @@ class App extends React.Component {
                 <p class="heading-4">25th Johor International Jamboree</p>
                 <p class="heading-5">Participant</p>
                 <p class="heading-6">2013</p>
+                <img class="extracurricular-images" src={jij_logo}></img>
 
                 <div class="fade-in">
                   <ul class="extracurricular-list">
@@ -323,6 +330,7 @@ class App extends React.Component {
                 <p class="heading-4">9th Petaling Scout's Group</p>
                 <p class="heading-5">Asistant Secretary</p>
                 <p class="heading-6">2013 - 2014</p>
+                <img class="extracurricular-images" src={scouts_logo}></img>
 
                 <div class="fade-in">
                   <ul class="extracurricular-list">
@@ -339,6 +347,7 @@ class App extends React.Component {
                 <p class="heading-4">School Cooperative Club</p>
                 <p class="heading-5">Asistant Head of Stock</p>
                 <p class="heading-6">2013 - 2014</p>
+                <img class="extracurricular-images" src={chs_logo}></img>
 
                 <div class="fade-in">
                   <ul class="extracurricular-list">
@@ -351,6 +360,22 @@ class App extends React.Component {
             
           </div>
         
+        </div>
+
+        <div class="working-experience-parent-container">
+          <a id="working_experience_link">
+            <div class="heading-1">
+              <p>Working Experience</p>
+            </div>
+          </a>
+
+          <div class="working-experience-container">
+            <div class="working-experience-subcontainer-1">
+              <p class="heading-2">Blackmores Malaysia</p>
+            </div>
+            
+          </div>
+
         </div>
 
         
