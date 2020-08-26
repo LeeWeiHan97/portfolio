@@ -398,6 +398,7 @@ ul {
   opacity: 1;
   transform: none;
   visibility: visible;
+  cursor: context-menu;
 }
 
 .extracurricular-list {
@@ -465,8 +466,77 @@ ul {
   background-color: rgb(116, 221, 133);
 }
 
+.working-experience-container {
+  margin-bottom: 25vh;
+  z-index: 2;
+}
+
 .working-experience-subcontainer-1 {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 136, 111);
+  padding-top: 7vh;
+  padding-bottom: 4vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  transition: 0.8s ease-in;
+}
+
+.working-experience-subcontainer-1:hover .working-experience-subcontainer-2 {
+  bottom: -20vh;
+}
+
+.working-experience-subcontainer-2 {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  background-color: rgb(148, 214, 159); 
+  height: 20vh;
+  z-index: -1;
+}
+
+.working-experience-image {
+  height: 6vh;
+}
+
+.scroll-down-image {
+  width: 3vh;
+  margin-bottom: 1vh;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: rgb(219, 216, 216);
+  vertical-align: middle;
+  line-height: 5vh;
+  text-align: center;
+  z-index: 2;
+}
+
+.footer-image {
+  width: 3vh;
+  margin-left: 2vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.footer-description {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom:0;
 }
 
 @media only screen and (min-width: 900px) {
