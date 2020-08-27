@@ -93,6 +93,7 @@ class App extends React.Component {
   render() {
     return (
       <div class="page-background">
+        <a id="top_link"></a>
         <Navbar className="navbar-custom" bg="light" expand="lg">
         <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -109,7 +110,7 @@ class App extends React.Component {
         </Navbar>
 
         <div class="parent-container-profile">
-          <a id="top_link">
+          
             <div class="container-profile">
               <p class="profile-heading-1">Hello</p>
               <p class="profile-heading-2">I'am Wei Han</p>
@@ -118,7 +119,6 @@ class App extends React.Component {
               <img id="profile-picture" src={profile_picture}></img>
               <a href={resume_file} download="Lee Wei Han's resume"><button id="resume-button" href="">My resume</button></a>
             </div>
-          </a>
         </div>
 
         <div class="about-me-parent-container">
