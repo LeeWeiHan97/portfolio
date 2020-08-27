@@ -534,6 +534,19 @@ ul {
   margin-bottom:0;
 }
 
+.back-to-top-image {
+  width: 6vw;
+}
+
+.back-container {
+  position: fixed;
+  bottom: 7vh;
+  right: 2.5vw;
+  width: 6vw;
+  z-index: 1;
+  transition: 0.8s;
+}
+
 @media only screen and (min-width: 900px) {
   .navbar-custom {
     display: flex;
@@ -1014,5 +1027,18 @@ ul {
     width: 15vw;
     height: 100%;
     z-index: -1;
+  }
+
+  .back-to-top-image {
+    width: 4vw;
+  }
+  
+  .back-container {
+    position: fixed;
+    bottom: 8vh;
+    right: 1.5vw;
+    width: 4vw;
+    z-index: 1;
+    transition: 0.8s;
   }
 }

@@ -21,7 +21,7 @@ import blackmores_logo from './blackmores.png';
 import facebook_logo from './facebook.png';
 import linkedin_logo from './linkedin.png';
 import profile_picture from './profile_picture.jpg';
-import scroll_down from './scroll_down.png';
+import back_to_top from './back-to-top.png';
 
 const NavLinkTag = styled.div`
   text-decoration: none;
@@ -103,21 +103,22 @@ class App extends React.Component {
               <Nav.Link href="#education_link" className="nav-right">Education</Nav.Link>
               <Nav.Link href="#extracurricular_link" className="nav-right">Extracurricular</Nav.Link>
               <Nav.Link href="#working_experience_link" className="nav-right">Working Experience</Nav.Link>
-              <Nav.Link href="#link" className="nav-right">Projects</Nav.Link>
             </div>
           </Nav>
         </Navbar.Collapse>
         </Navbar>
 
         <div class="parent-container-profile">
-          <div class="container-profile">
-            <p class="profile-heading-1">Hello</p>
-            <p class="profile-heading-2">I'am Wei Han</p>
-            <p class="profile-heading-1">Chemical Engineering Fresh Graduate</p>
-            <p class="profile-description">I have just graduated from The University of Manchester and am interested in an IT-based job. I completed NEXT Academy's Full-Stack Web Developer Course and have fallen in love with programming ever since!</p>
-            <img id="profile-picture" src={profile_picture}></img>
-            <a href={resume_file} download="Lee Wei Han's resume"><button id="resume-button" href="">My resume</button></a>
-          </div>
+          <a id="top_link">
+            <div class="container-profile">
+              <p class="profile-heading-1">Hello</p>
+              <p class="profile-heading-2">I'am Wei Han</p>
+              <p class="profile-heading-1">Chemical Engineering Fresh Graduate</p>
+              <p class="profile-description">I have just graduated from The University of Manchester and am interested in an IT-based job. I completed NEXT Academy's Full-Stack Web Developer Course and have fallen in love with programming ever since!</p>
+              <img id="profile-picture" src={profile_picture}></img>
+              <a href={resume_file} download="Lee Wei Han's resume"><button id="resume-button" href="">My resume</button></a>
+            </div>
+          </a>
         </div>
 
         <div class="about-me-parent-container">
@@ -400,13 +401,17 @@ class App extends React.Component {
 
         </div>
 
+        <div class="back-container">
+          <a href="#top_link"><img src={back_to_top} class="back-to-top-image"></img></a>
+        </div>
+        
+
         <div class="footer">
           <p class="footer-description">You can also find me at:</p>
           <a href="https://github.com/LeeWeiHan97" target="_blank"><img src={github_logo} class="footer-image"></img></a>
           <a href="https://www.facebook.com/weihan.lee.1401" target="_blank"><img src={facebook_logo} class="footer-image"></img></a>
           <a href="https://www.linkedin.com/in/wei-han-lee-9b1a7b161/" target="_blank"><img src={linkedin_logo} class="footer-image" target="_blank"></img></a>
         </div>
-        
 
       </div>
     )
