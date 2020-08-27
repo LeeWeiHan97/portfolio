@@ -385,17 +385,16 @@ class App extends React.Component {
                 <img class="working-experience-image" src={blackmores_logo}></img>
                 <p class="heading-2">Blackmores Malaysia</p>
                 <p class="heading-3">Jul 2018 - Aug 2018</p>
-                <div>
-                  <img src={scroll_down} class="scroll-down-image"></img>
-                </div>
 
-                <div class="working-experience-subcontainer-2">
+              </div>
+
+              <div class="working-experience-subcontainer-2">
                   <ul class="extracurricular-list">
                     <li class="extracurricular-description">Worked under regulatory affairs which dealt with acquiring approval for various products.</li>
                     <li class="extracurricular-description">Worked under the education department which required management of over 100 pharmacists from Malaysia.</li>
                   </ul> 
-                </div>
 
+                  <div class="connector"></div>
               </div>
           </div>
 
