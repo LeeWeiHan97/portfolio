@@ -92,7 +92,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="page-background">
         <Navbar className="navbar-custom" bg="light" expand="lg">
         <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
