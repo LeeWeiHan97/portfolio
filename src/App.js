@@ -22,6 +22,8 @@ import facebook_logo from './facebook.png';
 import linkedin_logo from './linkedin.png';
 import profile_picture from './profile_picture.jpg';
 import back_to_top from './back-to-top.png';
+import icy_mountains from './icy_mountains.jpg';
+import about_me from './about-me.png';
 
 const NavLinkTag = styled.div`
   text-decoration: none;
@@ -92,7 +94,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div class="page-background">
+      <div>
         <a id="top_link"></a>
         <Navbar className="navbar-custom" bg="light" expand="lg">
         <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
@@ -110,34 +112,35 @@ class App extends React.Component {
         </Navbar>
 
         <div class="parent-container-profile">
-          
-            <div class="container-profile">
-              <p class="profile-heading-1">Hello</p>
-              <p class="profile-heading-2">I'am Wei Han</p>
-              <p class="profile-heading-1">Chemical Engineering Fresh Graduate</p>
-              <p class="profile-description">I have just graduated from The University of Manchester and am interested in an IT-based job. I completed NEXT Academy's Full-Stack Web Developer Course and have fallen in love with programming ever since!</p>
-              <img id="profile-picture" src={profile_picture}></img>
-              <a href={resume_file} download="Lee Wei Han's resume"><button id="resume-button" href="">My resume</button></a>
-            </div>
+          <img src={icy_mountains} class="profile-background"></img>
+          <div class="container-profile">
+            <p class="profile-heading-1">Hello</p>
+            <p class="profile-heading-2">I'am Wei Han</p>
+            <p class="profile-heading-1">Chemical Engineering Fresh Graduate</p>
+            <p class="profile-description">I have just graduated from The University of Manchester and am interested in an IT-based job. I completed NEXT Academy's Full-Stack Web Developer Course and have fallen in love with programming ever since!</p>
+            <img id="profile-picture" src={profile_picture}></img>
+            <a href={resume_file} download="Lee Wei Han's resume"><button id="resume-button" href="">My resume</button></a>
+          </div>
         </div>
 
         <div class="about-me-parent-container">
           <a id="aboutme_link">
-            <div class="heading-1">
-              <p>About Me</p>
+            <div class="aboutme-header">
+              <img src={about_me} class="about-me-image"></img>
+              <p>HEY THERE</p>
             </div>
           </a>
 
           <div class="about-me-container">
             <div class="bio-container">
-              <p class="heading-2">Introduction</p>
               <div class="bio-description-container">
-                <p class="bio-description">My full name is Lee Wei Han and I am currently 23 years old. My hobbies include sports such as frisbee and badminton. I also enjoy computer gaming on the side.</p>
+                <p class="bio-description">My full name is Lee Wei Han and I am currently 23 years old. </p>
+                <p class="bio-description">My hobbies include sports such as frisbee and badminton. </p>
+                <p class="bio-description">I also enjoy computer gaming on the side.</p>
               </div>
             </div>
 
             <div class="contact-container">
-              <p class="heading-2">Contact Me</p>
               <div class="mobile-container">
                 <p class="mobile-heading">Mobile no.</p>
                 <p class="mobile-description">+60166039919</p>
@@ -146,8 +149,10 @@ class App extends React.Component {
                 <p class="mobile-heading">Email</p>
                 <p class="mobile-description">weihanlee88@gmail.com</p>
               </div>
-              <p class="mobile-heading">LinkedIn</p>
-              <div class="image-container"><a href="https://www.linkedin.com/in/wei-han-lee-9b1a7b161/" target="_blank"><img src={linkedIn} id="linkedin-logo"></img></a></div>         
+              <div>
+                <p class="mobile-heading">LinkedIn</p>
+                <div class="image-container"><a href="https://www.linkedin.com/in/wei-han-lee-9b1a7b161/" target="_blank"><img src={linkedIn} id="linkedin-logo"></img></a></div>         
+              </div>
             </div>
           </div>
         </div>
@@ -160,34 +165,78 @@ class App extends React.Component {
           </a>
 
           <div class="education-container-1">
-            <div class="image-container"><a href="https://www.nextacademy.com/" target="_blank"><img src={next_logo} id="next-logo"></img></a></div>
-            <a href="https://www.nextacademy.com/" target="_blank"><p class="education-heading-1">NEXT Academy</p></a>
-            <p class="education-heading-2">Full-Stack Web Developer Course</p>
-            <p class="education-heading-3">Jul 2019 - Sept 2019</p>
+            <div class="education-container-left">
+              <div class="image-container"><a href="https://www.nextacademy.com/" target="_blank"><img src={next_logo} id="next-logo"></img></a></div>
+              <a href="https://www.nextacademy.com/" target="_blank"><p class="education-heading-1">NEXT Academy</p></a>
+            </div>
+            <div class="education-container-right">
+              <p class="education-heading-2">Full-Stack Web Developer Course</p>
+              <p class="education-heading-3">Jul 2019 - Sept 2019</p>
+            </div>
           </div>
 
           <div class="education-container-2">
               <p class="frontend-heading-1">Front-End</p>
               <p class="frontend-heading-2">Languages</p>
-              <p class="frontend-description">HTML5, CSS3, Javascript</p>
+              <div class="list-container">
+                <p class="frontend-description">HTML5</p>
+                <div class="html"></div>
+              </div>
+              <div class="list-container">
+                <p class="frontend-description">CSS3</p>
+                <div class="css"></div>
+              </div>
+              <div class="list-container">
+                <p class="frontend-description">Javascript</p>
+                <div class="js"></div>
+              </div>
               <p class="frontend-heading-2">Library</p>
-              <p class="frontend-description">React.js, Bootstrap</p>
+              <div class="list-container">
+                <p class="frontend-description">React.js</p>
+                <div class="react"></div>
+              </div>
+              <div class="list-container">
+                <p class="frontend-description">Bootstrap</p>
+                <div class="bootstrap"></div>
+              </div>
+          </div>
 
+          <div class="education-container-5">
               <p class="frontend-heading-1">Back-End</p>
               <p class="frontend-heading-2">Language</p>
-              <p class="frontend-description">Python</p>
+              <div class="list-container">
+                <p class="frontend-description">Python</p>
+                <div class="python"></div>
+              </div>
               <p class="frontend-heading-2">Frameworks</p>
-              <p class="frontend-description">Flask, Jinja</p>
+              <div class="list-container">
+                <p class="frontend-description">Flask</p>
+                <div class="flask"></div>
+              </div>
+              <div class="list-container">
+                <p class="frontend-description">Jinja</p>
+                <div class="jinja"></div>
+              </div>
               <p class="frontend-heading-2">Databases</p>
-              <p class="frontend-description">SQLite, PostgreSQL</p>
+              <div class="list-container">
+                <p class="frontend-description">SQLite</p>
+                <div class="sqlite"></div>
+              </div>
+              <div class="list-container">
+                <p class="frontend-description">PostgreSQL</p>
+                <div class="postgresql"></div>
+              </div>
+          </div>
 
+          <div class="education-container-2">
               <p class="frontend-heading-1">Extras</p>
               <p class="frontend-heading-2">Language</p>
               <p class="frontend-description">Flutter (for mobile app development)</p>
               <p class="frontend-heading-2">Cloud Services</p>
               <p class="frontend-description">Amazon Web Services, Heroku, Netlify, Google Firebase</p>
-            
-              <div class="projects-container">
+          </div>
+
+          <div class="projects-container">
                 <p class="projects-heading-1">Projects</p>
                 <div class="projects-heading-link">
                   <p class="projects-heading-2">Nextagram</p>
@@ -204,16 +253,15 @@ class App extends React.Component {
                   <a href="https://github.com/LeeWeiHan97?tab=repositories" target="_blank"><img src={github_logo} id="github-logo"></img></a>
                 </div>
                 <p class="projects-description">A mobile app for users in a household to record their schedules as well as assign tasks to individuals. Extra features include alerting users of task datelines via notifications and geolocation pinpointing for nearby grocers.</p>
-              </div>
-          </div>
+            </div>
 
-          <div class="education-container-3">
+          <div class="education-container-1">
             <div class="image-container"><a href="https://www.manchester.ac.uk/" target="_blank"><img src={uom_logo} id="uom-logo"></img></a></div>
             <p class="education-heading-2">Chemical Engineering and Analytical Sciences</p>
             <p class="education-heading-3">Sept 2016 - Jul 2020</p>
           </div>
 
-          <div class="education-container-4">
+          <div class="education-container-6">
             <p class="uom-heading-1">Masters in Chemical Engineering and Analytical Sciences (Hons)</p>
             <p class="uom-heading-2">Second Class Upper | 2:1</p>
             <p class="uom-heading-1">Course Modules</p>
@@ -384,15 +432,15 @@ class App extends React.Component {
           <div class="working-experience-container">
               <div class="working-experience-subcontainer-1">
                 <img class="working-experience-image" src={blackmores_logo}></img>
-                <p class="heading-2">Blackmores Malaysia</p>
-                <p class="heading-3">Jul 2018 - Aug 2018</p>
+                <p class="working-heading-2">Blackmores Malaysia</p>
+                <p class="working-heading-3">Jul 2018 - Aug 2018</p>
 
               </div>
 
               <div class="working-experience-subcontainer-2">
                   <ul class="extracurricular-list">
-                    <li class="extracurricular-description">Worked under regulatory affairs which dealt with acquiring approval for various products.</li>
-                    <li class="extracurricular-description">Worked under the education department which required management of over 100 pharmacists from Malaysia.</li>
+                    <li class="working-description">Worked under regulatory affairs which dealt with acquiring approval for various products.</li>
+                    <li class="working-description">Worked under the education department which required management of over 100 pharmacists from Malaysia.</li>
                   </ul> 
 
                   <div class="connector"></div>
