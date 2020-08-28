@@ -82,27 +82,6 @@ function FadeInSection(props) {
   );
 } 
 
-function Appear(props) {
-  const [isVisible, setVisible] = React.useState(true);
-  const domRef = React.useRef();
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
-    });
-    observer.observe(domRef.current);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div
-      className={`fade-in ${isVisible ? 'is-visible' : ''}`}
-      ref={domRef}
-    >
-      {props.children}
-    </div>
-  )
-}
-
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -268,13 +247,12 @@ class App extends React.Component {
                 <p class="heading-6">2017 - 2018</p>
                 <img class="extracurricular-images" src={frisbee_logo}></img>
 
-                <Appear>
+                <div class="fade-in">
                   <ul class="extracurricular-list">
                     <li class="extracurricular-description">Plan and coordinate regular weekly training sessions for a club of approximately 30 people.</li>
                     <li class="extracurricular-description">Responsible for the coaching and training of new members.</li>
                   </ul>
-                </Appear>
-                  
+                </div>
               </div>
             </FadeInSection>
 
