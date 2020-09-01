@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container} from 'react-bootstrap';
-import resume_file from './Lee Wei Han-CV.pdf';
+import resume_file from './Lee Wei Han CV.pdf';
 import linkedIn from './linkedin social media icon_3609691.png';
 import next_logo from './next-academy-logo.png';
 import github_logo from './GitHub-Mark.png';
