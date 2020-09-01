@@ -294,13 +294,13 @@ class App extends React.Component {
                 <p class="heading-5">Top 5 Committee</p>
                 <p class="heading-6">2017 - 2018</p>
                 <img class="extracurricular-images" src={frisbee_logo}></img>
+              </div>
 
-                <div class="fade-in">
-                  <ul class="extracurricular-list">
-                    <li class="extracurricular-description">Plan and coordinate regular weekly training sessions for a club of approximately 30 people.</li>
-                    <li class="extracurricular-description">Responsible for the coaching and training of new members.</li>
-                  </ul>
-                </div>
+              <div class="fade-in">
+                <ul class="extracurricular-list">
+                  <li class="extracurricular-description">Plan and coordinate regular weekly training sessions for a club of approximately 30 people.</li>
+                  <li class="extracurricular-description">Responsible for the coaching and training of new members.</li>
+                </ul>
               </div>
             </FadeInSection>
 
@@ -310,13 +310,13 @@ class App extends React.Component {
                 <p class="heading-5">Group Leader</p>
                 <p class="heading-6">2019</p>
                 <img class="extracurricular-images" src={designproject_logo}></img>
+              </div>
 
-                <div class="fade-in">
-                  <ul class="extracurricular-list">
-                    <li class="extracurricular-description">Responsible for the communication between groupmates and the group supervisor to ensure high workflow efficiency.</li>
-                    <li class="extracurricular-description">Kept track of every official and unofficial meeting held to ensure the group work is able to be completed on time.</li>
-                  </ul>
-                </div>
+              <div class="fade-in">
+                <ul class="extracurricular-list">
+                  <li class="extracurricular-description">Responsible for the communication between groupmates and the group supervisor to ensure high workflow efficiency.</li>
+                  <li class="extracurricular-description">Kept track of every official and unofficial meeting held to ensure the group work is able to be completed on time.</li>
+                </ul>
               </div>
             </FadeInSection>
 
@@ -326,14 +326,13 @@ class App extends React.Component {
                 <p class="heading-5">Chairman</p>
                 <p class="heading-6">2017</p>
                 <img class="extracurricular-images" src={hazop_logo}></img>
+              </div>
 
-                <div class="fade-in">
-                  <ul class="extracurricular-list">
-                    <li class="extracurricular-description">Chaired and oversaw weekly meetings between a group of 7 members.</li>
-                    <li class="extracurricular-description">Communicated well with members to ensure each member’s progress is up to date.</li>
-                  </ul>
-                </div>
-                
+              <div class="fade-in">
+                <ul class="extracurricular-list">
+                  <li class="extracurricular-description">Chaired and oversaw weekly meetings between a group of 7 members.</li>
+                  <li class="extracurricular-description">Communicated well with members to ensure each member’s progress is up to date.</li>
+                </ul>
               </div>
             </FadeInSection>
 
@@ -343,13 +342,13 @@ class App extends React.Component {
                 <p class="heading-5">Volunteer</p>
                 <p class="heading-6">2015</p>
                 <img class="extracurricular-images" src={thirty_hour_famine_logo}></img>
+              </div>
 
-                <div class="fade-in">
-                  <ul class="extracurricular-list">
-                    <li class="extracurricular-description">Volunteered for my secondary school in conducting activities held during the 2 days period.</li>
-                    <li class="extracurricular-description">Head of station for various activities carried out, ensured smooth progression of the station game.</li>
-                  </ul>
-                </div>
+              <div class="fade-in">
+                <ul class="extracurricular-list">
+                  <li class="extracurricular-description">Volunteered for my secondary school in conducting activities held during the 2 days period.</li>
+                  <li class="extracurricular-description">Head of station for various activities carried out, ensured smooth progression of the station game.</li>
+                </ul>
               </div>
             </FadeInSection>
 
@@ -359,13 +358,13 @@ class App extends React.Component {
                 <p class="heading-5">Volunteer</p>
                 <p class="heading-6">2015</p>
                 <img class="extracurricular-images" src={eight_hour_famine_logo}></img>
+              </div>
 
-                <div class="fade-in">
-                  <ul class="extracurricular-list">
-                    <li class="extracurricular-description">Volunteered for a primary school in taking care of students during the event.</li>
-                    <li class="extracurricular-description">Learnt to be patient and manage a situation when it gets out of hand.</li>
-                  </ul>
-                </div>
+              <div class="fade-in">
+                <ul class="extracurricular-list">
+                  <li class="extracurricular-description">Volunteered for a primary school in taking care of students during the event.</li>
+                  <li class="extracurricular-description">Learnt to be patient and manage a situation when it gets out of hand.</li>
+                </ul>
               </div>
             </FadeInSection>
             
@@ -375,13 +374,13 @@ class App extends React.Component {
                 <p class="heading-5">Participant</p>
                 <p class="heading-6">2013</p>
                 <img class="extracurricular-images" src={jij_logo}></img>
+              </div>
 
-                <div class="fade-in">
-                  <ul class="extracurricular-list">
-                    <li class="extracurricular-description">Took part in an international event where we interacted with various individuals from all around the country and world.</li>
-                    <li class="extracurricular-description">Experienced and exposed myself to different cultures.</li>
-                  </ul>
-                </div>
+              <div class="fade-in">
+                <ul class="extracurricular-list">
+                  <li class="extracurricular-description">Took part in an international event where we interacted with various individuals from all around the country and world.</li>
+                  <li class="extracurricular-description">Experienced and exposed myself to different cultures.</li>
+                </ul>
               </div>
             </FadeInSection>
             
@@ -391,14 +390,14 @@ class App extends React.Component {
                 <p class="heading-5">Asistant Secretary</p>
                 <p class="heading-6">2013 - 2014</p>
                 <img class="extracurricular-images" src={scouts_logo}></img>
+              </div>
 
-                <div class="fade-in">
-                  <ul class="extracurricular-list">
-                    <li class="extracurricular-description">Arranged and involved in meetings with teacher advisors and school board to plan activities.</li>
-                    <li class="extracurricular-description">Trained juniors to be upcoming secretaries by implementing a scheduled training course.</li>
-                    <li class="extracurricular-description">Obtained approval from the school board for various activities held by the Scout’s Group.</li>
-                  </ul>
-                </div>
+              <div class="fade-in">
+                <ul class="extracurricular-list">
+                  <li class="extracurricular-description">Arranged and involved in meetings with teacher advisors and school board to plan activities.</li>
+                  <li class="extracurricular-description">Trained juniors to be upcoming secretaries by implementing a scheduled training course.</li>
+                  <li class="extracurricular-description">Obtained approval from the school board for various activities held by the Scout’s Group.</li>
+                </ul>
               </div>
             </FadeInSection>
             
@@ -408,13 +407,13 @@ class App extends React.Component {
                 <p class="heading-5">Asistant Head of Stock</p>
                 <p class="heading-6">2013 - 2014</p>
                 <img class="extracurricular-images" src={chs_logo}></img>
+              </div>
 
-                <div class="fade-in">
-                  <ul class="extracurricular-list">
-                    <li class="extracurricular-description">Coordinated and carried out regular stock checks with club members.</li>
-                    <li class="extracurricular-description">Maintained the tidiness of the store.</li>
-                  </ul>
-                </div>
+              <div class="fade-in">
+                <ul class="extracurricular-list">
+                  <li class="extracurricular-description">Coordinated and carried out regular stock checks with club members.</li>
+                  <li class="extracurricular-description">Maintained the tidiness of the store.</li>
+                </ul>
               </div>
             </FadeInSection>
             
