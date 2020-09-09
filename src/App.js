@@ -119,7 +119,7 @@ class App extends React.Component {
             <p class="profile-heading-1">Chemical Engineering Fresh Graduate</p>
             <p class="profile-description">I have just graduated from The University of Manchester and am interested in an IT-based job. I completed NEXT Academy's Full-Stack Web Developer Course and have fallen in love with programming ever since!</p>
             <img id="profile-picture" src={profile_picture}></img>
-            <a href={resume_file} download="Lee Wei Han's resume"><button id="resume-button" href="">My resume</button></a>
+            <a href={resume_file} download="Lee Wei Han's resume" class="button-container"><button id="resume-button" href="">My resume</button></a>
           </div>
         </div>
 
