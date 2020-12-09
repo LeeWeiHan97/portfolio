@@ -115,7 +115,7 @@ class App extends React.Component {
           <img src={icy_mountains} class="profile-background"></img>
           <div class="container-profile">
             <p class="profile-heading-1">Hello</p>
-            <p class="profile-heading-2">I'am Wei Han</p>
+            <p class="profile-heading-2">I'm Wei Han</p>
             <p class="profile-heading-1">Chemical Engineering Fresh Graduate</p>
             <p class="profile-description">I have just graduated from The University of Manchester and am interested in an IT-based job. I completed NEXT Academy's Full-Stack Web Developer Course and have fallen in love with programming ever since!</p>
             <img id="profile-picture" src={profile_picture}></img>
