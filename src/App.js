@@ -17,6 +17,7 @@ import eight_hour_famine_logo from './8-hour-famine.png';
 import jij_logo from './JIJ.png';
 import scouts_logo from './scouts.png';
 import chs_logo from './chs.png';
+import ADSYS_logo from './ADSYS.png';
 import blackmores_logo from './blackmores.png';
 import facebook_logo from './facebook.png';
 import linkedin_logo from './linkedin.png';
@@ -84,6 +85,8 @@ function FadeInSection(props) {
   );
 } 
 
+
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -97,15 +100,31 @@ class App extends React.Component {
       <div>
         <a id="top_link"></a>
         <Navbar className="navbar-custom" bg="light" expand="lg">
-        <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
+        <Navbar.Brand id="top">My Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <div class="nav-right-bar">
-              <Nav.Link href="#aboutme_link" className="nav-right">About Me</Nav.Link>
-              <Nav.Link href="#education_link" className="nav-right">Education</Nav.Link>
-              <Nav.Link href="#extracurricular_link" className="nav-right">Extracurricular</Nav.Link>
-              <Nav.Link href="#working_experience_link" className="nav-right">Working Experience</Nav.Link>
+              <Nav.Link onClick={()=>{
+                document.getElementById("about-me").scrollIntoView({
+                    behavior: 'smooth',
+                })
+              }} className="nav-right">About Me</Nav.Link>
+              <Nav.Link onClick={()=>{
+                document.getElementById("education").scrollIntoView({
+                    behavior: 'smooth',
+                })
+              }} className="nav-right">Education</Nav.Link>
+              <Nav.Link onClick={()=>{
+                document.getElementById("extracurricular").scrollIntoView({
+                    behavior: 'smooth',
+                })
+              }} className="nav-right">Extracurricular</Nav.Link>
+              <Nav.Link onClick={()=>{
+                document.getElementById("working-experience").scrollIntoView({
+                    behavior: 'smooth',
+                })
+              }} className="nav-right">Working Experience</Nav.Link>
             </div>
           </Nav>
         </Navbar.Collapse>
@@ -124,12 +143,10 @@ class App extends React.Component {
         </div>
 
         <div class="about-me-parent-container">
-          <a id="aboutme_link">
-            <div class="aboutme-header">
+            <div id="about-me" class="aboutme-header">
               <img src={about_me} class="about-me-image"></img>
               <p>HEY THERE</p>
             </div>
-          </a>
 
           <div class="about-me-container">
             <div class="bio-container">
@@ -158,11 +175,9 @@ class App extends React.Component {
         </div>
 
         <div class="education-parent-container">
-          <a id="education_link">
-            <div class="heading-1">
+            <div id="education" class="heading-1">
               <p>Education</p>
             </div>
-          </a>
 
           <div class="education-container-1">
             <div class="education-container-left">
@@ -209,6 +224,10 @@ class App extends React.Component {
                 <div class="python"></div>
               </div>
               <p class="frontend-heading-2">Frameworks</p>
+              <div class="list-container">
+                <p class="frontend-description">Django</p>
+                <div class="django"></div>
+              </div>
               <div class="list-container">
                 <p class="frontend-description">Flask</p>
                 <div class="flask"></div>
@@ -281,11 +300,9 @@ class App extends React.Component {
         </div>
 
         <div class="extracurricular-parent-container">
-          <a id="extracurricular_link">
-            <div class="heading-1">
+            <div id="extracurricular" class="heading-1">
               <p>Extracurricular</p>
             </div>
-          </a>
         
           <div class="extracurricular-container">
             <FadeInSection>
@@ -422,34 +439,54 @@ class App extends React.Component {
         </div>
 
         <div class="working-experience-parent-container">
-          <a id="working_experience_link">
-            <div class="heading-1">
-              <p>Working Experience</p>
+            <div id="working-experience" class="heading-1">
+                <p>Working Experience</p>
             </div>
-          </a>
 
-          <div class="working-experience-container">
-              <div class="working-experience-subcontainer-1">
-                <img class="working-experience-image" src={blackmores_logo}></img>
-                <p class="working-heading-2">Blackmores Malaysia</p>
-                <p class="working-heading-3">Jul 2018 - Aug 2018</p>
+            <div class="working-experience-container">
+                <div class="working-experience-subcontainer-1">
+                    <img class="working-experience-image" src={ADSYS_logo}></img>
+                    <p class="working-heading-2">Advanced Database & System Consultating Sdn. Bhd.</p>
+                    <p class="working-heading-3">Oct 2021 - Present</p>
 
-              </div>
+                </div>
 
-              <div class="working-experience-subcontainer-2">
-                  <ul class="extracurricular-list">
-                    <li class="working-description">Worked under regulatory affairs which dealt with acquiring approval for various products.</li>
-                    <li class="working-description">Worked under the education department which required management of over 100 pharmacists from Malaysia.</li>
-                  </ul> 
+                <div class="working-experience-subcontainer-2">
+                    <ul class="extracurricular-list">
+                        <li class="working-description">Working as a software engineer responsible for the development and maintenance of Front and Back-End webpage and web application development of inhouse and external projects.</li>
+                        <li class="working-description">Cooperated with the company Sales department to understand and evaluate the expectations of our clients towards our projects.</li>
+                        <li class="working-description">Main projects consist of <a href="https://gatherdeal.com/" target="_blank">Gather Deal Client</a> and <a href="https://login.adsysconsulting.com/" target="_blank">Gather Deal Merchant</a>.</li>
+                    </ul> 
 
-                  <div class="connector"></div>
-              </div>
-          </div>
+                    <div class="connector"></div>
+                </div>
+            </div>
 
+            <div class="working-experience-container">
+                <div class="working-experience-subcontainer-1">
+                    <img class="working-experience-image" src={blackmores_logo}></img>
+                    <p class="working-heading-2">Blackmores Malaysia</p>
+                    <p class="working-heading-3">Jul 2018 - Aug 2018</p>
+
+                </div>
+
+                <div class="working-experience-subcontainer-2">
+                    <ul class="extracurricular-list">
+                        <li class="working-description">Worked under regulatory affairs which dealt with acquiring approval for various products.</li>
+                        <li class="working-description">Worked under the education department which required management of over 100 pharmacists from Malaysia.</li>
+                    </ul> 
+
+                    <div class="connector"></div>
+                </div>
+            </div>
         </div>
 
         <div class="back-container">
-          <a href="#top_link"><img src={back_to_top} class="back-to-top-image"></img></a>
+            <img src={back_to_top} class="back-to-top-image" onClick={()=>{
+                document.getElementById("top").scrollIntoView({
+                    behavior: 'smooth',
+                })
+            }}></img>
         </div>
         
 

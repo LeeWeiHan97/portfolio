@@ -404,7 +404,7 @@ ul {
 .react:after {
   position: absolute;
   content: "";
-  width: 85%;
+  width: 90%;
   height: 1em;
   border-radius: 1000px;
   background-color: rgba(54,126,223,1);
@@ -450,6 +450,27 @@ ul {
   height: 1em;
   border-radius: 1000px;
   background-color: rgba(54,126,223,1);
+}
+
+.django {
+    position: absolute;
+    top: 4px;
+    left: 30vw;
+    width: 50%;
+    height: 1em;
+    background-color: rgba(54,126,223,0.5);
+    border-radius: 1000px;
+    padding-right: 2vw;
+    color: #838383;
+}
+  
+.django:after {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 1em;
+    border-radius: 1000px;
+    background-color: rgba(54,126,223,1);
 }
 
 .flask {
@@ -810,7 +831,7 @@ ul {
 }
 
 .footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -1216,6 +1237,18 @@ ul {
   }
   
   .python {
+    position: absolute;
+    top: 4px;
+    left: 30vw;
+    width: 35%;
+    height: 1em;
+    background-color: rgba(54,126,223,0.5);
+    border-radius: 1000px;
+    padding-right: 2vw;
+    color: #838383;
+  }
+
+  .django {
     position: absolute;
     top: 4px;
     left: 30vw;
