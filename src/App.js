@@ -95,6 +95,14 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount = () => {
+    const date = new Date()
+    let thisYear = date.getFullYear()
+    this.setState({
+      age: thisYear - 1997
+    })
+  }
+
   render() {
     return (
       <div>
@@ -151,7 +159,7 @@ class App extends React.Component {
           <div class="about-me-container">
             <div class="bio-container">
               <div class="bio-description-container">
-                <p class="bio-description">My full name is Lee Wei Han and I am currently 23 years old. </p>
+                <p class="bio-description">My full name is Lee Wei Han and I am currently {this.state.age} years old. </p>
                 <p class="bio-description">My hobbies include sports such as frisbee and badminton. </p>
                 <p class="bio-description">I also enjoy computer gaming on the side.</p>
               </div>
@@ -443,11 +451,29 @@ class App extends React.Component {
                 <p>Working Experience</p>
             </div>
 
+            {/* <div class="working-experience-container">
+                <div class="working-experience-subcontainer-1">
+                    <img class="working-experience-image" src={ADSYS_logo}></img>
+                    <p class="working-heading-2">Standard Chartered GBS</p>
+                    <p class="working-heading-3">Aug 2021 - Present</p>
+
+                </div>
+
+                <div class="working-experience-subcontainer-2">
+                    <ul class="extracurricular-list">
+                        <li class="working-description">Working as a Java backend developer responsible for the development and maintenance of Front and Back-End webpage and web application development of inhouse and external projects.</li>
+                        <li class="working-description">Cooperated with the company Sales department to understand and evaluate the expectations of our clients towards our projects.</li>
+                    </ul> 
+
+                    <div class="connector"></div>
+                </div>
+            </div> */}
+
             <div class="working-experience-container">
                 <div class="working-experience-subcontainer-1">
                     <img class="working-experience-image" src={ADSYS_logo}></img>
                     <p class="working-heading-2">Advanced Database & System Consultating Sdn. Bhd.</p>
-                    <p class="working-heading-3">Oct 2021 - Present</p>
+                    <p class="working-heading-3">Oct 2020 - July 2021</p>
 
                 </div>
 
