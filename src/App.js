@@ -17,6 +17,7 @@ import eight_hour_famine_logo from './8-hour-famine.png';
 import jij_logo from './JIJ.png';
 import scouts_logo from './scouts.png';
 import chs_logo from './chs.png';
+import scb_logo from './scb-logo.png';
 import ADSYS_logo from './ADSYS.png';
 import blackmores_logo from './blackmores.png';
 import facebook_logo from './facebook.png';
@@ -451,9 +452,9 @@ class App extends React.Component {
                 <p>Working Experience</p>
             </div>
 
-            {/* <div class="working-experience-container">
+            <div class="working-experience-container">
                 <div class="working-experience-subcontainer-1">
-                    <img class="working-experience-image" src={ADSYS_logo}></img>
+                    <img class="working-experience-image" src={scb_logo}></img>
                     <p class="working-heading-2">Standard Chartered GBS</p>
                     <p class="working-heading-3">Aug 2021 - Present</p>
 
@@ -461,13 +462,14 @@ class App extends React.Component {
 
                 <div class="working-experience-subcontainer-2">
                     <ul class="extracurricular-list">
-                        <li class="working-description">Working as a Java backend developer responsible for the development and maintenance of Front and Back-End webpage and web application development of inhouse and external projects.</li>
-                        <li class="working-description">Cooperated with the company Sales department to understand and evaluate the expectations of our clients towards our projects.</li>
+                        <li class="working-description">Working as a Java backend developer responsible for the trade port system of the company.</li>
+                        <li class="working-description">Involved in the migration of the system microservices from Websphere servers to Tomcat servers.</li>
+                        <li class="working-description">Involved in setting up test regions for services to check their compatibility with new infrastructures.</li>
                     </ul> 
 
                     <div class="connector"></div>
                 </div>
-            </div> */}
+            </div>
 
             <div class="working-experience-container">
                 <div class="working-experience-subcontainer-1">
