@@ -481,7 +481,7 @@ class App extends React.Component {
                     <ul class="extracurricular-list">
                         <li class="working-description">Working as a software engineer responsible for the development and maintenance of Front and Back-End webpage and web application development of inhouse and external projects.</li>
                         <li class="working-description">Cooperated with the company Sales department to understand and evaluate the expectations of our clients towards our projects.</li>
-                        <li class="working-description">Main projects consist of <a href="https://gatherdeal.com/" target="_blank">Gather Deal Client</a> and <a href="https://login.adsysconsulting.com/" target="_blank">Gather Deal Merchant</a>.</li>
+                        <li class="working-description">Main projects consist of <a href="https://gatherdeal.com/" target="_blank">Gather Deal Client</a> and <a href="https://gd.enlliance.com/" target="_blank">Gather Deal Merchant</a>.</li>
                     </ul> 
 
                     <div class="connector"></div>
