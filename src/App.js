@@ -17,6 +17,7 @@ import eight_hour_famine_logo from './8-hour-famine.png';
 import jij_logo from './JIJ.png';
 import scouts_logo from './scouts.png';
 import chs_logo from './chs.png';
+import capbay_logo from './capbay-logo.png';
 import scb_logo from './scb-logo.png';
 import ADSYS_logo from './ADSYS.png';
 import blackmores_logo from './blackmores.png';
@@ -454,9 +455,29 @@ class App extends React.Component {
 
             <div class="working-experience-container">
                 <div class="working-experience-subcontainer-1">
+                    <img class="working-experience-image" src={capbay_logo}></img>
+                    <p class="working-heading-2">CapBay</p>
+                    <p class="working-heading-3">Dec 2022 - Present</p>
+
+                </div>
+
+                <div class="working-experience-subcontainer-2">
+                    <ul class="extracurricular-list">
+                        <li class="working-description">Working as a software engineer responsible for the development and maintenance of the Peer-to-Peer financing platform (web and mobile) and internal administration web application.</li>
+                        <li class="working-description">Responsible for both UI/UX and endpoints of the applications involved.</li>
+                        <li class="working-description">Managed to deliver on a major revamp of our internal payments management system within the designated timeframe of 1 month.</li>
+                    </ul> 
+
+                    <div class="connector"></div>
+                </div>
+            </div>
+
+
+            <div class="working-experience-container">
+                <div class="working-experience-subcontainer-1">
                     <img class="working-experience-image" src={scb_logo}></img>
                     <p class="working-heading-2">Standard Chartered GBS</p>
-                    <p class="working-heading-3">Aug 2021 - Present</p>
+                    <p class="working-heading-3">Aug 2021 - Nov 2022</p>
 
                 </div>
 
